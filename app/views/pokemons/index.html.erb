@@ -1,0 +1,11 @@
+<h1>Welcome to Pokedex!</h1>
+
+  <% @pokemons.each do |pokemon| %>
+      <li><%= pokemon.id %></li>
+      <li><%= pokemon.name %></li>
+      <li><%= pokemon.img %></li>
+      <li><%= pokemon.height %></li>
+      <li><%= pokemon.weight %></li>
+      <br/>
+
+  <% end %>
