@@ -6,6 +6,10 @@
       <li><%= pokemon.img %></li>
       <li><%= pokemon.height %></li>
       <li><%= pokemon.weight %></li>
+
+      <td><%= link_to 'Destroy', pokemon_path(pokemon),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %></td>
       <br/>
 
   <% end %>

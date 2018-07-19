@@ -1,0 +1,40 @@
+<h1>Edit article</h1>
+ 
+<%= form_with(model: @pokemons, local: true) do |form| %>
+ 
+  <p>
+    <%= form.label :id %><br>
+    <%= form.text_field :id %><br>
+    <%= form.label :num %><br>
+    <%= form.text_field :num %><br>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %><br>
+    <%= form.label :img %><br>
+    <%= form.text_field :img %><br>
+    <%= form.label :height %><br>
+    <%= form.text_field :height %><br>
+    <%= form.label :weight %><br>
+    <%= form.text_field :weight %><br>
+    <%= form.label :candy %><br>
+    <%= form.text_field :candy %><br>
+    <%= form.label :candy_count %><br>
+    <%= form.text_field :candy_count %><br>
+    <%= form.label :egg %><br>
+    <%= form.text_field :egg %><br>
+    <%= form.label :avg_spawns %><br>
+    <%= form.text_field :avg_spawns %><br>
+    <%= form.label :spawn_time %><br>
+    <%= form.text_field :spawn_time %><br>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Back', pokemons_path %>
+      <%= link_to 'Destroy', pokemon_path(@pokemons),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+   
